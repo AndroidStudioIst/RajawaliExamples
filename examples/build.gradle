@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.0"
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.monyetmabuk.rajawali.tutorials"
-        minSdkVersion 15
-        targetSdkVersion 22
+        minSdk 15
+        targetSdk 34
     }
 
     buildTypes {
@@ -19,9 +18,9 @@ android {
 }
 
 dependencies {
-    compile project.depRajawali
-    compile project.depAndroidSupport
-    compile project.depAppCompat
-    compile project.depGSON
-    compile project.depIon
+    implementation project.depRajawali
+    implementation project.depAndroidSupport
+    implementation project.depAppCompat
+    implementation project.depGSON
+    implementation project.depIon
 }

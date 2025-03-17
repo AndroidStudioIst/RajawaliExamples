@@ -7,15 +7,19 @@ if (file('local.gradle').exists()) {
 
 buildscript {
     repositories {
+        google()
+        mavenCentral()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
 allprojects {
     repositories {
+        google()
+        mavenCentral()
         mavenLocal()
 
         // OSS Nexus Snapshots
